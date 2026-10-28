@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💕 Happy Birthday Kim Thư</title>
+    <meta name="description" content="Trang web chúc mừng sinh nhật dành riêng cho Nguyễn Thị Kim Thư">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="hearts-container" id="heartsContainer"></div>
+
+    <!-- Background Image -->
+    <div class="login-bg"></div>
+
+    <!-- Login Card -->
+    <div class="login-wrapper">
+        <div class="login-card" id="loginCard">
+            <div class="login-sparkle"></div>
+            <div class="login-header">
+                <div class="login-icon">💌</div>
+                <h1 class="login-title">Happy Birthday My Embe</h1>
+                <p class="login-subtitle">Đăng nhập để mở quà sinh nhật</p>
+            </div>
+
+            <form class="login-form" id="loginForm">
+                <div class="input-group">
+                    <div class="input-icon">👤</div>
+                    <input type="text" id="username" placeholder="Gia Huy hay Kim Thư..." autocomplete="off" required>
+                    <div class="input-line"></div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-icon">🔑</div>
+                    <input type="password" id="password" placeholder="Nhập mật khẩu..." required>
+                    <div class="input-line"></div>
+                </div>
+
+                <div class="error-message" id="errorMsg"></div>
+
+                <button type="submit" class="login-btn" id="loginBtn">
+                    <span class="btn-text">Mở quà nào 💕</span>
+                    <span class="btn-loader"></span>
+                </button>
+            </form>
+
+            <div class="login-footer">
+                <p>✨ Dành riêng cho embe của anh ✨</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+
+</html>
+<style>
+    .login-title {
+        font-size: 22px;
+    }
+</style>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎂 Happy 18th Birthday - Nguyễn Thị Kim Thư</title>
+    <meta name="description" content="Chúc mừng sinh nhật lần thứ 18 của Nguyễn Thị Kim Thư">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-heart">💕</div>
+            <p class="preloader-text">Đang chuẩn bị quà cho công chúa...</p>
+            <div class="preloader-bar">
+                <div class="preloader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand">
+            <span class="nav-logo">💕</span>
+            <span class="nav-name">Kim Thư</span>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <a href="#hero" class="nav-link active" data-section="hero">Trang chủ</a>
+            <a href="#timeline" class="nav-link" data-section="timeline">Timeline</a>
+            <a href="#gallery" class="nav-link" data-section="gallery">Ảnh</a>
+            <a href="#card" class="nav-link" data-section="card">Thiệp</a>
+            <a href="#love" class="nav-link" data-section="love">Yêu thương</a>
+        </div>
+        <div class="nav-actions">
+            <span class="nav-user" id="navUser"></span>
+            <button class="nav-logout" id="logoutBtn" title="Đăng xuất">🚪</button>
+        </div>
+        <button class="nav-hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#hero" class="mobile-link">🏠 Trang chủ</a>
+        <a href="#timeline" class="mobile-link">📅 Timeline</a>
+        <a href="#gallery" class="mobile-link">📷 Ảnh</a>
+        <a href="#card" class="mobile-link">💌 Thiệp</a>
+        <a href="#love" class="mobile-link">💕 Yêu thương</a>
+        <div class="mobile-menu-divider"></div>
+        <button class="mobile-logout" id="mobileLogoutBtn">🚪 Đăng xuất</button>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="images/hero-bg.jpg" alt="Kim Thư" class="hero-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="hero-content">
+            <div class="hero-badge">🎂 21 . 10 . 2026</div>
+            <h1 class="hero-title">
+                <span class="title-line title-small">Happy Birthday</span>
+                <span class="title-line title-name">Kim Thư</span>
+                <span class="title-line title-age">Tròn 18 Tuổi</span>
+            </h1>
+            <p class="hero-subtitle">Nguyễn Thị Kim Thư</p>
+            <div class="hero-divider"><span>✦</span></div>
+            <p class="hero-quote" id="heroQuote">"Em là điều tuyệt vời nhất đến với anh"</p>
+        </div>
+        <div class="scroll-indicator">
+            <span class="scroll-text">Cuộn xuống</span>
+            <div class="scroll-arrow">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="timeline-section" id="timeline">
+        <div class="section-header">
+            <span class="section-tag">Hành trình của chúng mình</span>
+            <h2 class="section-title">Những Khoảnh Khắc</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="timeline">
+            <div class="timeline-line"></div>
+            <div class="timeline-item left reveal">
+                <div class="timeline-dot">🌸</div>
+                <div class="timeline-card">
+                    <div class="timeline-date">21 / 10 / 2008</div>
+                    <h3 class="timeline-title" id="timeline-title-1">Ngày em ra đời 🎂</h3>
+                    <p class="timeline-desc" id="timeline-desc-1">Ngày mà 1 thiên thần đã đến với thế giới để mà sau này
+                        gặp được anh :v</p>
+                </div>
+            </div>
+            <div class="timeline-item right reveal">
+                <div class="timeline-dot">💕</div>
+                <div class="timeline-card">
+                    <div class="timeline-date">08 / 06 / 2026</div>
+                    <h3 class="timeline-title" id="timeline-title-2">Ngày mình yêu nhau 💑</h3>
+                    <p class="timeline-desc" id="timeline-desc-2">Ngày đặc biệt nhất của bọn mình mà anh sẽ không thể
+                        quên được.</p>
+                </div>
+            </div>
+            <div class="timeline-item left reveal">
+                <div class="timeline-dot">🎉</div>
+                <div class="timeline-card">
+                    <div class="timeline-date">21 / 10 / 2026</div>
+                    <h3 class="timeline-title" id="timeline-title-3">Tròn 18 tuổi 🌟</h3>
+                    <p class="timeline-desc" id="timeline-desc-3">Em bước sang tuổi 18 - tuổi của những ước mơ, của sự
+                        trưởng thành. Anh sẽ luôn ở đây đồng hành như 1 phần thanh xuân của em.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery-section" id="gallery">
+        <div class="section-header">
+            <span class="section-tag">Khoảnh khắc đáng nhớ</span>
+            <h2 class="section-title">Album Kỷ Niệm</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="gallery-grid" id="galleryGrid"></div>
+        <button class="gallery-add-btn admin-only" id="addPhotoBtn">➕ Thêm Ảnh</button>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">✕</button>
+        <button class="lightbox-prev" id="lightboxPrev">❮</button>
+        <button class="lightbox-next" id="lightboxNext">❯</button>
+        <div class="lightbox-content">
+            <img src="" alt="" class="lightbox-img" id="lightboxImg">
+            <p class="lightbox-caption" id="lightboxCaption"></p>
+        </div>
+        <div class="lightbox-counter" id="lightboxCounter"></div>
+    </div>
+
+    <!-- SURPRISE CARD -->
+    <section class="card-section" id="card">
+        <div class="section-header">
+            <span class="section-tag">Dành riêng cho em</span>
+            <h2 class="section-title">Thiệp Bất Ngờ</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="card-wrapper">
+            <div class="surprise-card" id="surpriseCard">
+                <div class="card-front">
+                    <div class="card-front-decor">
+                        <div class="card-stars">✨</div>
+                        <div class="card-envelope">💌</div>
+                        <div class="card-stars">✨</div>
+                    </div>
+                    <h3 class="card-front-title">Có một bất ngờ<br>dành cho em</h3>
+                    <p class="card-front-hint">Nhấn vào để mở 💕</p>
+                    <div class="card-front-glow"></div>
+                </div>
+                <div class="card-back">
+                    <div class="card-back-header">
+                        <span>💕</span><span>Gửi embeiu của anh</span><span>💕</span>
+                    </div>
+                    <div class="card-back-content" id="cardContent">Chúc mừng sinh nhật em yêu! 🎂
+
+                        Em tròn 18 tuổi rồi đó! Anh không biết nói gì nhiều, chỉ muốn em biết rằng anh rất hạnh phúc khi
+                        có em bên cạnh.
+
+                        Cảm ơn em vì đã đến bên anh, vì đã nói yêu anh vào ngày 1 tháng 6 - ngày mà anh sẽ không bao giờ
+                        quên.
+
+                        Chúc em luôn xinh đẹp, vui vẻ và hạnh phúc. Anh sẽ luôn ở đây, yêu em mỗi ngày! 💕
+
+                        — Gia Huy 💕</div>
+                    <div class="card-back-footer"><span class="card-date">21 . 10 . 2026</span></div>
+                </div>
+            </div>
+            <p class="card-instruction" id="cardInstruction">👆 Nhấn vào thiệp để mở</p>
+        </div>
+        <canvas class="confetti-canvas" id="confettiCanvas"></canvas>
+    </section>
+
+    <!-- LOVE COUNTER -->
+    <section class="love-section" id="love">
+        <div class="love-bg-particles" id="loveParticles"></div>
+        <div class="section-header light">
+            <span class="section-tag">Tình yêu của chúng mình</span>
+            <h2 class="section-title">Bên Nhau</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="love-counter">
+            <div class="counter-item">
+                <div class="counter-number" id="counterDays">0</div>
+                <div class="counter-label">Ngày</div>
+            </div>
+            <div class="counter-separator">:</div>
+            <div class="counter-item">
+                <div class="counter-number" id="counterHours">0</div>
+                <div class="counter-label">Giờ</div>
+            </div>
+            <div class="counter-separator">:</div>
+            <div class="counter-item">
+                <div class="counter-number" id="counterMinutes">0</div>
+                <div class="counter-label">Phút</div>
+            </div>
+            <div class="counter-separator">:</div>
+            <div class="counter-item">
+                <div class="counter-number" id="counterSeconds">0</div>
+                <div class="counter-label">Giây</div>
+            </div>
+        </div>
+        <p class="love-message">Đã bên nhau từ ngày 08/06/2026 và đương nhiên trước đó đã bên nhau rồi :v</p>
+        <div class="love-hearts"><span>💕</span><span>💖</span><span>💗</span><span>💝</span><span>💕</span></div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-heart">💕</div>
+            <p class="footer-text">Made with ❤️ by <strong>Gia Huy</strong></p>
+            <p class="footer-sub">Dành riêng cho embe của riêng anh</p>
+            <p class="footer-year">© 2026</p>
+        </div>
+    </footer>
+
+    <!-- ADMIN PANEL -->
+    <button class="admin-fab admin-only" id="adminFab" title="Admin Panel">⚙️</button>
+    <div class="admin-panel" id="adminPanel">
+        <div class="admin-header">
+            <h3>⚙️ Admin Panel</h3>
+            <button class="admin-close" id="adminClose">✕</button>
+        </div>
+        <div class="admin-body">
+            <div class="admin-tabs">
+                <button class="admin-tab active" data-tab="card-tab">💌 Thiệp</button>
+                <button class="admin-tab" data-tab="photos-tab">🖼️ Ảnh</button>
+                <button class="admin-tab" data-tab="text-tab">📝 Text</button>
+            </div>
+            <div class="admin-tab-content active" id="card-tab">
+                <label class="admin-label">Nội dung thiệp bất ngờ:</label>
+                <textarea class="admin-textarea" id="adminCardText" rows="10"
+                    placeholder="Viết nội dung thiệp..."></textarea>
+                <button class="admin-save-btn" id="saveCardBtn">💾 Lưu Thiệp</button>
+            </div>
+            <div class="admin-tab-content" id="photos-tab">
+                <label class="admin-label">Chọn ảnh từ thiết bị:</label>
+                <input type="file" id="newPhotoFile" accept="image/*" class="admin-input" style="padding: 8px;">
+                <p style="font-size: 12px; color: rgba(245,240,235,0.5); text-align: center; margin: 8px 0;">HOẶC DÁN
+                    URL</p>
+                <input type="text" class="admin-input" id="newPhotoUrl" placeholder="Dán URL ảnh...">
+                <input type="text" class="admin-input" id="newPhotoCaption" placeholder="Caption..."
+                    style="margin-top:8px">
+                <button class="admin-save-btn" id="addPhotoBtnAdmin" style="margin-top:12px">➕ Thêm Ảnh</button>
+                <div class="admin-divider"></div>
+                <label class="admin-label">Ảnh hiện tại:</label>
+                <div class="admin-photos-list" id="adminPhotosList"></div>
+            </div>
+            <div class="admin-tab-content" id="text-tab">
+                <label class="admin-label">Lời chào Hero:</label>
+                <input type="text" class="admin-input" id="adminHeroQuote" placeholder="Câu quote...">
+                <button class="admin-save-btn" id="saveHeroQuoteBtn" style="margin-top:8px">💾 Lưu</button>
+                <div class="admin-divider"></div>
+                <label class="admin-label">Timeline - Mốc 1:</label>
+                <input type="text" class="admin-input" id="adminTimeline1Title" placeholder="Tiêu đề...">
+                <textarea class="admin-textarea small" id="adminTimeline1Desc" rows="2"
+                    placeholder="Mô tả..."></textarea>
+                <label class="admin-label">Timeline - Mốc 2:</label>
+                <input type="text" class="admin-input" id="adminTimeline2Title" placeholder="Tiêu đề...">
+                <textarea class="admin-textarea small" id="adminTimeline2Desc" rows="2"
+                    placeholder="Mô tả..."></textarea>
+                <label class="admin-label">Timeline - Mốc 3:</label>
+                <input type="text" class="admin-input" id="adminTimeline3Title" placeholder="Tiêu đề...">
+                <textarea class="admin-textarea small" id="adminTimeline3Desc" rows="2"
+                    placeholder="Mô tả..."></textarea>
+                <button class="admin-save-btn" id="saveTextBtn" style="margin-top:12px">💾 Lưu Tất Cả</button>
+            </div>
+        </div>
+    </div>
+    <div class="admin-overlay" id="adminOverlay"></div>
+
+    <!-- LOVE NOTES -->
+    <button class="love-note-btn" id="loveNoteBtn" title="Lý do yêu em">💌</button>
+    <div class="love-note-overlay" id="loveNoteOverlay"></div>
+    <div class="love-note-popup" id="loveNotePopup">
+        <p class="love-note-text" id="loveNoteText"></p>
+        <button class="love-note-close" id="loveNoteClose">Đóng 💕</button>
+    </div>
+
+    <!-- MUSIC PLAYER -->
+    <div class="music-player" id="musicPlayer">
+        <button class="music-btn" id="musicBtn">🎵</button>
+        <div class="music-info">
+            <span class="music-title">sinh nhật của xinh nhất</span>
+        </div>
+        <audio id="bgMusic" loop>
+            <source src="24KRIGHT - SINH NHẬT CỦA.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast">
+        <span class="toast-icon">✅</span>
+        <span class="toast-text" id="toastText">Đã lưu!</span>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+
+</html>
